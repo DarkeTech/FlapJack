@@ -1,0 +1,76 @@
+
+### Commit Message Rules (Strict)
+Every commit must be:
+- (a) User-visible feature, OR
+- (b) Bug fix blocking usage
+
+**Forbidden until v0.5:** "refactor", "cleanup", "optimize", "wip", "temp"
+
+---
+
+## AI Collaboration Guidelines
+
+### Context Management
+- Keep `TODAY.md` updated with current blockers—AI reads this first
+- When context window gets tight, summarize to: What works / What's broken / Next 3 steps
+- No architecture debates with AI during Days 1-2. Implementation only.
+
+### Prompt Templates for This Phase
+**Stuck on implementation:** "Implement the ugliest working version of [feature]. Optimize nothing. Just make it return the correct result."
+
+**Scope creep detected:** "Given our 48-hour deadline, which of these features is critical for v0.1-demo vs. can wait?"
+
+**Hardware temptation:** "I want to add [complex infrastructure]. Convince me why this should go in HARDWARE_BACKLOG.md instead of today's code."
+
+---
+
+## Weekly Rhythm
+
+| Day | Action | Success Metric |
+|-----|--------|----------------|
+| **Monday** | New repo, ugly prototype | `TODAY.md` objective met by EOD |
+| **Wednesday** | User test (self or other) | 3 friction points documented |
+| **Friday** | Ship vs. Kill decision | README + screenshot posted, OR repo archived with post-mortem |
+
+**Ship:** Polish README, add DEMO_GIF, announce.  
+**Kill:** Archive, write 3-sentence post-mortem, migrate hardware ideas to global backlog.
+
+---
+
+## Anti-Distraction Default Stack
+When in doubt, use this:
+
+- **Language:** Python (fastest idea-to-runnable)
+- **UI:** Terminal → Gradio/Streamlit (no frontend frameworks until v2)
+- **Storage:** SQLite or JSON (no DB setup until 100+ users)
+- **Hosting:** Localhost only. Share screen recordings, not deployed URLs.
+
+---
+
+## Success Metrics
+- [ ] Repo has visible commits within 2 hours of initialization
+- [ ] v0.1-demo tag exists within 48 hours
+- [ ] HARDWARE_BACKLOG.md has entries (proves you're resisting temptation)
+- [ ] One stranger has run the code successfully
+
+**The Only Metric That Matters:** Number of repositories with working demos.  
+**Target:** One shippable repo every 2 weeks minimum.
+
+---
+
+## Emergency Protocols
+
+**Feeling the urge to research hardware:**  
+Open `HARDWARE_BACKLOG.md`, write it down, close laptop for 5 minutes, return to code.
+
+**Caught in architecture paralysis:**  
+Ask: "What would this look like if it were easy?" Implement that. Document the "proper" way in `HACKS.md` for later.
+
+**AI suggesting complex solutions:**  
+Reply: "Simpler. Assume I have no GPU, no cloud budget, and 4 hours left."
+
+---
+
+*Protocol activated: _______________  
+Next checkpoint: _______________  
+Current blocker: _______________*
