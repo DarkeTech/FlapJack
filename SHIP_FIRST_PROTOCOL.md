@@ -12,6 +12,7 @@ Working code in 48 hours. Architecture can wait. Feedback cannot.
 ---
 
 ## Phase 0: Hardware Firewall (Do This First)
+
 - [ ] Create `HARDWARE_BACKLOG.md` 
 - [ ] Write down the shiny hardware you want to buy: _______________
 - [ ] Close all shopping tabs. Lock the file. Code with what you have.
@@ -24,6 +25,7 @@ Working code in 48 hours. Architecture can wait. Feedback cannot.
 ## Phase 1: The 48-Hour Scaffold
 
 ### Day 1 (Hours 0-4): Ugly Truth
+
 - [ ] `git init` + GitHub push with README describing **user outcome**, not tech stack
 - [ ] Choose "boring" stack: _______________ (the one you know, not the trendy one)
 - [ ] Write the ugliest version that demonstrates core interaction
@@ -33,6 +35,7 @@ Working code in 48 hours. Architecture can wait. Feedback cannot.
 `________________________________________________________________`
 
 ### Day 2 (Hours 4-48): Stranger-Ready
+
 - [ ] `requirements.txt` or equivalent install script
 - [ ] README includes: install steps, run command, expected output
 - [ ] Add one "sticky" mechanic (see checklist below)
@@ -42,6 +45,7 @@ Working code in 48 hours. Architecture can wait. Feedback cannot.
 ---
 
 ## Sticky Programs Checklist
+
 Before writing code, validate this solves 2+ criteria:
 
 - [ ] **Instant feedback:** User sees result in &lt;3 seconds (no batch processing)
@@ -55,17 +59,18 @@ Before writing code, validate this solves 2+ criteria:
 ---
 
 ## Repository Discipline
-repo/
-├── TODAY.md              # Current single objective
-├── HACKS.md              # Acknowledged tech debt (prevents rabbit holes)
-├── DEMO_GIF.gif          # Visual proof (create before polishing code)
-├── HARDWARE_BACKLOG.md   # The parking lot
-└── AI_CONTEXT.md         # (Optional) Persistent context for AI collaborators
 
----
+**Required Structure:**
 
+    repo/
+    ├── TODAY.md              # Current single objective
+    ├── HACKS.md              # Acknowledged tech debt (prevents rabbit holes)
+    ├── DEMO_GIF.gif          # Visual proof (create before polishing code)
+    ├── HARDWARE_BACKLOG.md   # The parking lot
+    └── AI_CONTEXT.md         # (Optional) Persistent context for AI collaborators
 
 ### Commit Message Rules (Strict)
+
 Every commit must be:
 - (a) User-visible feature, OR
 - (b) Bug fix blocking usage
@@ -77,11 +82,13 @@ Every commit must be:
 ## AI Collaboration Guidelines
 
 ### Context Management
+
 - Keep `TODAY.md` updated with current blockers—AI reads this first
 - When context window gets tight, summarize to: What works / What's broken / Next 3 steps
 - No architecture debates with AI during Days 1-2. Implementation only.
 
 ### Prompt Templates for This Phase
+
 **Stuck on implementation:** "Implement the ugliest working version of [feature]. Optimize nothing. Just make it return the correct result."
 
 **Scope creep detected:** "Given our 48-hour deadline, which of these features is critical for v0.1-demo vs. can wait?"
@@ -104,6 +111,7 @@ Every commit must be:
 ---
 
 ## Anti-Distraction Default Stack
+
 When in doubt, use this:
 
 - **Language:** Python (fastest idea-to-runnable)
@@ -114,6 +122,7 @@ When in doubt, use this:
 ---
 
 ## Success Metrics
+
 - [ ] Repo has visible commits within 2 hours of initialization
 - [ ] v0.1-demo tag exists within 48 hours
 - [ ] HARDWARE_BACKLOG.md has entries (proves you're resisting temptation)
